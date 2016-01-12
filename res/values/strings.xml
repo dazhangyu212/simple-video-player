@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">简简播放器</string>
+    <string name="hello">万千世界尽收眼底!</string>
+	<string name="list_no_data">没有数据</string>
+	<string name="text_video_name">让子弹飞</string>
+	<string name="text_video_size">800MB</string>
+	<string name="adv_inc">广告位招商</string>
+	<string name="video_list">视频播放列表</string>
+	<string name="exit_app">再按一次退出程序</string>
+	<string name="change_city">修改城市</string>
+    <string name="update_weather">更新列表</string>
+    <string name="wallpaper">壁纸</string>
+    
+    <string name="wallpaper_text01">青色世界</string>
+    <string name="wallpaper_text02">梦幻星空</string>
+    <string name="wallpaper_text03">花香引蝶</string>
+    <string name="wallpaper_text04">绝色荷塘</string>
+</resources>

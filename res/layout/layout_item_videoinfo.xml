@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal" >
+    <ImageView 
+        android:id="@+id/iv_video_thumbnail"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:background="@color/listcolorhint"
+        />
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="60dp"
+	    android:layout_margin="5dp"
+	    android:layout_toRightOf="@id/iv_video_thumbnail"
+	    >
+	    <!-- 显示视频文件名 -->
+	    <TextView 
+	        android:id="@+id/tv_video_name"
+	        style="@style/textViewStyle"
+	        android:text="@string/text_video_name"
+	        />
+	    <!-- 在文件名下方显示文件的大小 -->
+	    <TextView 
+	        android:id="@+id/tv_video_size"
+			style="@style/textViewStyle"
+	        android:text="@string/text_video_size"
+	        android:layout_below="@id/tv_video_name"
+	        />
+	</RelativeLayout>
+</LinearLayout>

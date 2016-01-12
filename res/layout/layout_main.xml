@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- 显示广告区域 -->
+    <FrameLayout 
+        android:id="@+id/fl_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        
+        >
+        <!-- 使用surfaceView显示视频 -->
+        <SurfaceView 
+            android:id="@+id/sv_main_screen"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            />
+        <!-- 把控制按钮包裹起来放到FrameLayout里 -->
+        <LinearLayout 
+            android:id="@+id/bottombar"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            >
+            <!--
+					SeekBar - 可拖动的进度条控件
+					max - 进度的最大值
+					progress - 第一进度位置
+					secondaryProgress - 第二进度位置
+					-->
+					<SeekBar 
+					android:id="@+id/seekBar" 
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content" 
+					android:max="100"
+					android:progress="50" 
+					android:secondaryProgress="100" />
+                    <LinearLayout 
+			            android:layout_gravity="bottom"
+			            android:orientation="horizontal"
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="center_horizontal"
+			            android:layout_marginBottom="5dp"
+			            >
+                        <!-- 播放按钮 -->
+            <ImageButton 
+                android:id="@+id/ib_main_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@raw/btn_mp_play"
+                />
+            <!-- 停止按钮 -->
+            <ImageButton 
+                android:id="@+id/ib_main_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@raw/btn_mp_stop"
+                />
+            <!-- 视频按钮选择 -->
+            <ImageButton 
+                android:id="@+id/ib_main_openlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@raw/btn_mp_openlist"
+                />
+        </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
